@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="rvc" />
+
+  <!-- Replace existing repositories -->
+  <remove-project name="platform/frameworks/base" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <remove-project name="platform/frameworks/native" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
+  <remove-project name="device/google/wahoo" />
+  <project name="android_device_google_wahoo" path="device/google/wahoo" remote="proton" groups="proton" />
+  <remove-project name="device/google/taimen" />
+  <project name="android_device_google_taimen" path="device/google/taimen" remote="proton" groups="proton" />
+  <remove-project name="platform/build" />
+  <project name="android_build_make" path="build/make" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+  <project name="android_packages_apps_PermissionController" path="packages/apps/PermissionController" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
+  <remove-project name="platform/system/core" />
+  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <remove-project name="platform/system/sepolicy" />
+  <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
+  <remove-project name="platform/bionic" />
+  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <remove-project name="platform/external/roboto-fonts" />
+  <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" groups="proton" />
+  <remove-project name="platform/external/noto-fonts" />
+  <project name="android_external_noto-fonts" path="external/noto-fonts" remote="proton" groups="proton" />
+  <remove-project name="platform/external/google-fonts/cutive-mono" />
+  <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="proton" groups="proton" />
+  <remove-project name="device/google/muskie" />
+  <project name="android_device_google_muskie" path="device/google/muskie" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/msm8998" />
+  <project name="android_hardware_qcom_msm8998" path="hardware/qcom/msm8998" remote="proton" groups="proton" />
+  <remove-project name="device/google/sunfish" />
+  <project name="android_device_google_sunfish" path="device/google/sunfish" remote="proton" groups="proton" />
+
+  <!-- Add new repositories -->
+  <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
+  <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
+  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="android_vendor_google" path="vendor/google" remote="proton" groups="proton" />
+  <project name="android_external_json-c" path="external/json-c" remote="proton" groups="proton" />
+
+  <!-- External repositories -->
+  <project name="Eamo5/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="eleven" />
+</manifest>

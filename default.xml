@@ -825,4 +825,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- ProtonAOSP snippet -->
+  <include name="snippets/proton.xml"/>
+
 </manifest>
