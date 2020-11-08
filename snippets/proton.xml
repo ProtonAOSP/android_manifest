@@ -62,7 +62,5 @@
   <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
   <project name="android_vendor_google" path="vendor/google" remote="proton" groups="proton" />
   <project name="android_external_json-c" path="external/json-c" remote="proton" groups="proton" />
-
-  <!-- External repositories -->
-  <project name="Eamo5/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="eleven" />
+  <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="rvc" />
 </manifest>
