@@ -81,6 +81,8 @@
   <project name="android_external_chromium-webview" path="external/chromium-webview" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
+  <remove-project name="device/common" />
+  <project name="android_device_common" path="device/common" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
