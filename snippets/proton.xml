@@ -57,12 +57,39 @@
   <project name="android_hardware_qcom_msm8998" path="hardware/qcom/msm8998" remote="proton" groups="proton" />
   <remove-project name="device/google/sunfish" />
   <project name="android_device_google_sunfish" path="device/google/sunfish" remote="proton" groups="proton" />
+  <remove-project name="device/google/redbull" />
+  <project name="android_device_google_redbull" path="device/google/redbull" remote="proton" groups="proton" />
+  <remove-project name="device/google/redbull-sepolicy" />
+  <project name="android_device_google_redbull-sepolicy" path="device/google/redbull-sepolicy" remote="proton" groups="proton" />
+  <remove-project name="device/google/redfin" />
+  <project name="android_device_google_redfin" path="device/google/redfin" remote="proton" groups="proton" />
+  <remove-project name="platform/external/freetype" />
+  <project name="android_external_freetype" path="external/freetype" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <project name="android_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Camera2" />
+  <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="proton" groups="proton" />
+  <remove-project name="platform/system/hardware/interfaces" />
+  <project name="android_system_hardware_interfaces" path="system/hardware/interfaces" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="proton" groups="proton" />
+  <remove-project name="platform/external/chromium-webview" />
+  <project name="android_external_chromium-webview" path="external/chromium-webview" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
   <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
   <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
-  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
   <project name="android_external_json-c" path="external/json-c" remote="proton" groups="proton" />
+  <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
+  <project name="android_packages_apps_ElmyraService" path="packages/apps/ElmyraService" remote="proton" groups="proton" />
+  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
+  <project name="android_vendor_qcom" path="vendor/qcom" remote="blobs" groups="proton" />
   <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="rvc" />
 </manifest>
