@@ -81,6 +81,11 @@
   <project name="android_device_google_bramble" path="device/google/bramble" remote="proton" groups="proton" />
   <remove-project name="platform/external/openssh" />
   <project name="android_external_openssh" path="external/openssh" remote="proton" groups="proton" />
+  <remove-project name="platform/build/soong" />
+  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
   <!-- Add new repositories -->
   <project name="android_device_google_wahoo" path="device/google/wahoo" remote="proton" groups="proton" />
