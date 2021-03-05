@@ -112,4 +112,5 @@
   <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
+  <project name="ProtonAOSP/android_external_chromium" path="external/chromium" remote="gitlab" revision="master" />
 </manifest>
