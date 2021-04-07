@@ -120,6 +120,8 @@
   <project name="android_external_sqlite" path="external/sqlite" remote="proton" groups="proton" />
   <remove-project name="platform/external/jemalloc_new" />
   <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/ril" />
+  <project name="android_hardware_ril" path="hardware/ril" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
