@@ -122,6 +122,16 @@
   <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/ril" />
   <project name="android_hardware_ril" path="hardware/ril" remote="proton" groups="proton" />
+  <remove-project name="device/google/coral" />
+  <project name="android_device_google_coral" path="device/google/coral" remote="proton" groups="proton" />
+  <remove-project name="device/google/coral-sepolicy" />
+  <project name="android_device_google_coral-sepolicy" path="device/google/coral-sepolicy" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
+  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
@@ -150,4 +160,7 @@
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
 </manifest>
