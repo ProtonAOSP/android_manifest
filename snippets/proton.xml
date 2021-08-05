@@ -132,6 +132,10 @@
   <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm7250/display" />
+  <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm7250/media" />
+  <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
@@ -163,4 +167,5 @@
   <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="proton" groups="proton" />
 </manifest>
