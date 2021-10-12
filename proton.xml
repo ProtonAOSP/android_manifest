@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
+  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
+  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
+
+  <!-- Remove existing repositories -->
+  <remove-project name="platform/external/zlib" />
+
+  <!-- Replace existing repositories -->
+  <remove-project name="platform/frameworks/base" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <remove-project name="platform/libcore" />
+  <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
+  <remove-project name="platform/build" />
+  <project name="android_build_make" path="build/make" remote="proton" groups="proton">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="device/common" />
+  <project name="android_device_common" path="device/common" remote="proton" groups="proton" />
+  <remove-project name="platform/art" />
+  <project name="android_art" path="art" remote="proton" groups="proton" />
+  <remove-project name="platform/system/core" />
+  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <remove-project name="platform/system/sepolicy" />
+  <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
+  <remove-project name="platform/external/noto-fonts" />
+  <project name="android_external_noto-fonts" path="external/noto-fonts" remote="proton" groups="proton" />
+  <remove-project name="platform/external/roboto-fonts" />
+  <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" groups="proton" />
+  <remove-project name="platform/external/google-fonts/cutive-mono" />
+  <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project name="android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="proton" groups="proton" />
+  <remove-project name="platform/bionic" />
+  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <remove-project name="platform/frameworks/native" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project name="android_packages_modules_Permission" path="packages/modules/Permission" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project name="android_packages_modules_Wifi" path="packages/modules/Wifi" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <project name="android_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Camera2" />
+  <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="proton" groups="proton" />
+  <remove-project name="platform/external/openssh" />
+  <project name="android_external_openssh" path="external/openssh" remote="proton" groups="proton" />
+  <remove-project name="device/google/coral-sepolicy" />
+  <project name="android_device_google_coral-sepolicy" path="device/google/coral-sepolicy" remote="proton" groups="proton" />
+  <remove-project name="device/google/coral" />
+  <project name="android_device_google_coral" path="device/google/coral" remote="proton" groups="proton" />
+  <remove-project name="device/google/redfin" />
+  <project name="android_device_google_redfin" path="device/google/redfin" remote="proton" groups="proton" />
+  <remove-project name="device/google/redbull" />
+  <project name="android_device_google_redbull" path="device/google/redbull" remote="proton" groups="proton" />
+  <remove-project name="device/google/redbull-sepolicy" />
+  <project name="android_device_google_redbull-sepolicy" path="device/google/redbull-sepolicy" remote="proton" groups="proton" />
+  <remove-project name="device/google/bramble" />
+  <project name="android_device_google_bramble" path="device/google/bramble" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
+  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm7250/display" />
+  <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/qcom/sm7250/media" />
+  <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" remote="proton" groups="proton" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project name="android_system_memory_lmkd" path="system/memory/lmkd" remote="proton" groups="proton" />
+
+  <!-- Add new repositories -->
+  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
+  <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
+  <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
+  <project name="android_packages_apps_ElmyraService" path="packages/apps/ElmyraService" remote="proton" groups="proton" />
+  <project name="android_external_htop" path="external/htop" remote="proton" groups="proton" />
+  <project name="android_external_p7zip" path="external/p7zip" remote="proton" groups="proton" />
+  <project name="android_external_bash" path="external/bash" remote="proton" groups="proton" />
+  <project name="android_external_nano" path="external/nano" remote="proton" groups="proton" />
+  <project name="android_external_pigz" path="external/pigz" remote="proton" groups="proton" />
+  <project name="android_external_vim" path="external/vim" remote="proton" groups="proton" />
+  <project name="android_external_zip" path="external/zip" remote="proton" groups="proton" />
+  <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
+  <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
+  <project name="android_tools_extract-utils" path="tools/extract-utils" remote="proton" groups="proton" />
+  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
+  <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="sc" />
+  <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="proton" groups="proton" />
+  <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
+  <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
+</manifest>
