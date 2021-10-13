@@ -132,5 +132,7 @@
   <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
+  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
+  <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
 </manifest>
