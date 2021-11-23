@@ -98,7 +98,10 @@
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
-  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" />
+  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" >
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm8150/Android.bp" />
+  </project>
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
