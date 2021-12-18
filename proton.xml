@@ -108,8 +108,16 @@
   <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" remote="proton" groups="proton" />
-  <remove-project name="platform/system/memory/lmkd" />
-  <project name="android_system_memory_lmkd" path="system/memory/lmkd" remote="proton" groups="proton" />
+  <remove-project name="device/google/gs101" />
+  <project name="android_device_google_gs101" path="device/google/gs101" remote="proton" groups="proton" />
+  <remove-project name="device/google/gs101-sepolicy" />
+  <project name="android_device_google_gs101-sepolicy" path="device/google/gs101-sepolicy" remote="proton" groups="proton" />
+  <remove-project name="device/google/raviole" />
+  <project name="android_device_google_raviole" path="device/google/raviole" remote="proton" groups="proton" />
+  <remove-project name="platform/external/armnn" />
+  <project name="android_external_armnn" path="external/armnn" remote="proton" groups="proton" />
+  <remove-project name="platform/external/android-nn-driver" />
+  <project name="android_external_android-nn-driver" path="external/android-nn-driver" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
@@ -138,4 +146,5 @@
   <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
+  <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="proton" groups="proton" />
 </manifest>
