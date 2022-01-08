@@ -147,4 +147,9 @@
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
   <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="proton" groups="proton" />
+  <project path="vendor/resources/lawnicons" name="LawnchairLauncher/lawnicons" remote="github" revision="main-wip" >
+    <linkfile src="app/src/main/res/drawable/*" dest="vendor/lawnicons/iconoverlay/packages/apps/Launcher3/res/drawable" />
+    <linkfile src="app/src/main/res/xml/*" dest="vendor/lawnicons/iconoverlay/packages/apps/Launcher3/res/xml" />
+    <linkfile src="app/src/main/res/values/dimens.xml" dest="vendor/lawnicons/iconoverlay/packages/apps/Launcher3/res/values/dimens.xml" />
+  </project>
 </manifest>
