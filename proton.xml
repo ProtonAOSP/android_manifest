@@ -149,5 +149,5 @@
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
   <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="proton" groups="proton" />
-  <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" remote="github" groups="proton" />
+  <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" remote="github" groups="proton" revision="main" />
 </manifest>
