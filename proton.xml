@@ -128,6 +128,7 @@
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
   <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
   <project name="android_packages_apps_ElmyraService" path="packages/apps/ElmyraService" remote="proton" groups="proton" />
+  <project name="android_external_exfatprogs" path="external/exfatprogs" remote="proton" groups="proton" />
   <project name="android_external_htop" path="external/htop" remote="proton" groups="proton" />
   <project name="android_external_p7zip" path="external/p7zip" remote="proton" groups="proton" />
   <project name="android_external_bash" path="external/bash" remote="proton" groups="proton" />
