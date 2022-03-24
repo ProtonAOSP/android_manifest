@@ -5,10 +5,10 @@
   <remote name="github-ssh" fetch="ssh://git@github.com" />
   <remote name="gitlab" fetch="https://gitlab.com" />
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
-  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
-  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
-  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
-  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc-v2" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc-v2" />
+  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-v2" />
+  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-v2" />
 
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
@@ -120,6 +120,8 @@
   <project name="android_external_android-nn-driver" path="external/android-nn-driver" remote="proton" groups="proton" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <project name="android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="proton" groups="proton" />
+  <remove-project name="platform/system/vold" />
+  <project name="android_system_vold" path="system/vold" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
@@ -138,7 +140,6 @@
   <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
   <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
   <project name="android_tools_extract-utils" path="tools/extract-utils" remote="proton" groups="proton" />
-  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
   <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="sc" />
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
@@ -152,4 +153,5 @@
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" remote="github" groups="proton" revision="main" />
   <project name="android_vendor_google_devices" path="vendor/google_devices" remote="blobs" groups="proton" />
   <project name="android_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="proton" groups="proton" />
+  <project name="android_external_exfatprogs" path="external/exfatprogs" remote="proton" groups="proton" />
 </manifest>
