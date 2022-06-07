@@ -5,10 +5,10 @@
   <remote name="github-ssh" fetch="ssh://git@github.com" />
   <remote name="gitlab" fetch="https://gitlab.com" />
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
-  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc-v2" />
-  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc-v2" />
-  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-v2" />
-  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-v2" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc-qpr3" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc-qpr3" />
+  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-qpr3" />
+  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-qpr3" />
 
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
