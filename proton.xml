@@ -122,6 +122,8 @@
   <project name="android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="proton" groups="proton" />
   <remove-project name="platform/system/vold" />
   <project name="android_system_vold" path="system/vold" remote="proton" groups="proton" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project name="android_external_libjpeg-turbo" path="external/libjpeg-turbo" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
   <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
